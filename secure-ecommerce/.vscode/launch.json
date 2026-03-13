@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run EcommerceApplication",
+      "request": "launch",
+      "mainClass": "com.ecommerce.EcommerceApplication",
+      "projectName": "secure-ecommerce",
+      "env": {
+        "JWT_SECRET": "404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970",
+        "DB_USERNAME": "postgres",
+        "DB_PASSWORD": "postgres",
+        "SPRING_PROFILES_ACTIVE": "dev"
+      }
+    },
+    {
+      "type": "java",
+      "name": "Debug EcommerceApplication",
+      "request": "launch",
+      "mainClass": "com.ecommerce.EcommerceApplication",
+      "projectName": "secure-ecommerce",
+      "vmArgs": "-Xdebug",
+      "env": {
+        "JWT_SECRET": "404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970",
+        "DB_USERNAME": "postgres",
+        "DB_PASSWORD": "postgres",
+        "SPRING_PROFILES_ACTIVE": "dev"
+      }
+    }
+  ]
+}
